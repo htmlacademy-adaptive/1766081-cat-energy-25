@@ -1,0 +1,49 @@
+.registration {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @border;
+}
+
+.registration__list {
+  .page-list;
+  .oswald(16px; 18px);
+
+  color: @grey;
+  text-transform: uppercase;
+  display: grid;
+  gap: 13px;
+}
+
+.registration__item {
+  display: flex;
+  align-items: baseline;
+}
+
+.registration__label {
+  padding-right: 12px;
+}
+
+.registration__input {
+  .oswald(16px; 18px);
+
+  color: @grey;
+  text-transform: uppercase;
+  height: 45px;
+  padding: 0;
+  padding-left: 15px;
+  outline: none;
+  border: 1px solid @border-form;
+  flex-grow: 1;
+
+  &::placeholder {
+    color: @grey;
+    opacity: 1;
+  }
+
+  &:focus, &:active {
+    border: 1px solid @grey;
+    box-shadow: inset 0 0 0 1px @grey;
+  }
+}
