@@ -1,0 +1,51 @@
+.programs-list {
+  .page-list;
+
+  display: grid;
+  gap: 20px;
+}
+
+.programs-list__item {
+  background-color: @white-box;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 22px;
+  }
+
+.programs-list__title {
+  .oswald(24px; 37px);
+
+  color: @black;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.programs-list__text {
+  .arial(14px; 18px);
+
+  color: @grey;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @border;
+}
+
+.programs-list__button {
+  .oswald(16px; 16px);
+
+  display: flex;
+  color: @black;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 140px;
+  padding-top: 19px;
+
+  &:active {
+    color: fade(@black; 30%);
+  }
+}
+
+.programs-list__button-icon {
+  padding-left: 17px;
+}
